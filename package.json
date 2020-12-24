@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/atshaya-anand/Weather-Module/issues"
   },
-  "homepage": "https://github.com/atshaya-anand/Weather-Module#readme"
+  "homepage": "https://github.com/atshaya-anand/Weather-Module#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
