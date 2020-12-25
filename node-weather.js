@@ -1,13 +1,32 @@
 const request = require('request');
 
-let weather = '';
+var weather = '';
 var error = '';
 
 
-exports.getWeather = function(city){
+exports.getWeather = function(loc){
     
+    loc = loc.trim();
+    var city = loc.replace(/[^a-zA-Z ]/g, "");
+    var reqCity = city.split(" ");
+    
+    if (reqCity.length > 1){
+      
+      for(var i=0;i<reqCity.length;i++){
+        reqCity[i] = reqCity[i].charAt(0).toUpperCase() + reqCity[i].slice(1);
+      }
+      city = reqCity.join();
+      city = city.replace(",","-");
+
+    }else{
+      
+      city = city.charAt(0).toUpperCase() + city.slice(1);
+    
+    }
+
     var url = `https://www.weather-forecast.com/locations/`+city+`/forecasts/latest`;
     request(url, function (err, response, body) {
+        
         if(err){
           console.log('error:', error);
         } else {
@@ -16,7 +35,9 @@ exports.getWeather = function(city){
           weather = secondPageArray[0];
           console.log(weather);
         }
+
       });
+    
     //console.log(weather);
     //return weather;
 
