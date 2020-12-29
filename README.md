@@ -22,6 +22,17 @@ And the function returns the current weather for the given city or location.
 
 Use it as follows:
 
+```
+const weather = require('whethere');
+
+var city = "berlin";
+
+console.log(`Today's Weather for `+city+` is ----- `);
+weather.getWeather(city).then(response =>{
+    console.log('weather',response);
+});
+```
+
 ## Dependencies
 
 The package has one dependency - **request** module 
