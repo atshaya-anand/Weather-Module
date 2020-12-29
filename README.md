@@ -31,11 +31,11 @@ var city = "berlin";
 
 weather.getWeather(city).then(response =>{
     // logs the current weather for the given location
-    console.log('Today's Weather:',response);        
+    console.log("Today's Weather:",response);        
 });
 ```
 
-An other example for using the weather data:
+Another example for using the weather data:
 
 ```js
 // import the function
@@ -50,7 +50,7 @@ weather.getWeather(city).then(response =>{
 });
 
 function print(currentWeather){
-    console.log('Today's Weather:',currentWeather);
+    console.log("Today's Weather:",currentWeather);
 }
 ```
 
