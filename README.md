@@ -22,14 +22,15 @@ And the function returns the current weather for the given city or location.
 
 Use it as follows:
 
-```
+```js
+// import the function
 const weather = require('whethere');
 
+// given a particular location
 var city = "berlin";
 
-console.log(`Today's Weather for `+city+` is ----- `);
 weather.getWeather(city).then(response =>{
-    console.log('weather',response);
+    console.log('weather',response);        // logs the current weather for the given location
 });
 ```
 
