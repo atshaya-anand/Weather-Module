@@ -12,7 +12,7 @@ npm install whethere
 
 ## Usage
 
-The package exports a function.
+The package exports a function called - **getWeather()**.
 
 The function takes **one argument**: the required city's name of string type.
 
