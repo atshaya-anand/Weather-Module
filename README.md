@@ -14,7 +14,7 @@ npm install whethere
 
 The package exports a function.
 
-The function takes **one required argument**: the required city's name of string type.
+The function takes **one argument**: the required city's name of string type.
 
 And the function returns the current weather for the given city or location.
 
@@ -24,7 +24,7 @@ Use it as follows:
 
 ## Dependencies
 
-The package has one dependency - request module 
+The package has one dependency - **request** module 
 
 ## Contributing
 
