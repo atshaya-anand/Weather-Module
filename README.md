@@ -2,86 +2,31 @@
 
 A simple node package that gives the current weather of a particular location scrapped from [Weather-Forecast.com](https://www.weather-forecast.com/).
 
-## Getting Started
+## Installation
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+As with any other node package:
 
 ```
-Give examples
+npm install whethere
 ```
 
-### Installing
+## Usage
 
-A step by step series of examples that tell you how to get a development env running
+The package exports a function.
 
-Say what the step will be
+The function takes **one required argument**: the required city's name of string type.
 
-```
-Give the example
-```
+And the function returns the current weather for the given city or location.
 
-And repeat
+## Example
 
-```
-until finished
-```
+Use it as follows:
 
-End with an example of getting some data out of the system or using it for a little demo
+## Dependencies
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+The package has one dependency - request module 
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
