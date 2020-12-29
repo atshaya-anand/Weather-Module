@@ -30,7 +30,8 @@ const weather = require('whethere');
 var city = "berlin";
 
 weather.getWeather(city).then(response =>{
-    console.log('Today's Weather:',response);        // logs the current weather for the given location
+    // logs the current weather for the given location
+    console.log('Today's Weather:',response);        
 });
 ```
 
