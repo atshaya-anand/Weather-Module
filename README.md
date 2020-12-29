@@ -18,7 +18,7 @@ The function takes **one argument**: the required city's name of string type.
 
 And the function returns the current weather for the given city or location.
 
-## Example
+### Example
 
 Use it as follows:
 
@@ -33,6 +33,9 @@ weather.getWeather(city).then(response =>{
     console.log('weather',response);        // logs the current weather for the given location
 });
 ```
+### Note
+
+The module performs string manipulations in order to remove all the special characters and extra white spaces from the argument passed to the function. Therefore, no need of string validation or manipulation code.
 
 ## Dependencies
 
