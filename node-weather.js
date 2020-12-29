@@ -26,7 +26,8 @@ exports.getWeather = async function(loc){
 
     var url = `https://www.weather-forecast.com/locations/`+city+`/forecasts/latest`;
      
-    weather = await sendRequest(url).then(console.log('hey'));
+    weather = await sendRequest(url);
+    //console.log("atshayaaaaa",weather);
     return weather;
     
 }
@@ -49,7 +50,5 @@ function sendRequest(url){
     });
   });
 
-  
 }
-  
 
