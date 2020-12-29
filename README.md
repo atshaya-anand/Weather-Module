@@ -18,7 +18,7 @@ The function takes **one argument**: the required city's name of string type.
 
 And the function returns the current weather for the given city or location.
 
-### Example
+### Examples
 
 Use it as follows:
 
@@ -30,9 +30,30 @@ const weather = require('whethere');
 var city = "berlin";
 
 weather.getWeather(city).then(response =>{
-    console.log('weather',response);        // logs the current weather for the given location
+    console.log('Today's Weather:',response);        // logs the current weather for the given location
 });
 ```
+
+An other example for using the weather data:
+
+```js
+// import the function
+const weather = require('whethere');
+
+// given a particular location
+var city = "berlin";
+var currentWeather;
+
+weather.getWeather(city).then(response =>{
+    currentWeather = response;                      // since the module uses async method call, every operation you do with the data should be done from this scope
+    print();
+});
+
+function print(){
+    console.log('Today's Weather:',currentWeather);
+}
+```
+
 ### Note
 
 The module performs string manipulations in order to remove all the special characters and extra white spaces from the argument passed to the function. Therefore, no need of string validation or manipulation code.
