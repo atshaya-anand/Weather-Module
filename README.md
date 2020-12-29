@@ -42,14 +42,13 @@ const weather = require('whethere');
 
 // given a particular location
 var city = "berlin";
-var currentWeather;
 
-weather.getWeather(city).then(response =>{
-    currentWeather = response;                      // since the module uses async method call, every operation you do with the data should be done from this scope
-    print();
+weather.getWeather(city).then(response =>{  
+    // since the module uses async method call, every operation you do with the data should be done from this scope
+    print(response);
 });
 
-function print(){
+function print(currentWeather){
     console.log('Today's Weather:',currentWeather);
 }
 ```
